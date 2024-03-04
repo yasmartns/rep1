@@ -17,5 +17,5 @@ func _process(delta):
 	else:
 		velocity.x = 0
 	if is_on_floor() and Input.is_action_just_pressed("ui_up"):
-		velocity.y -= 500
+		velocity.y -= 200
 	move_and_slide()
