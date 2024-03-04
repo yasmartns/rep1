@@ -15,7 +15,7 @@ func _process(delta):
 		velocity.x = -speed
 		$Sprite2D.flip_h = true
 	else:
-		velocity.x = 0
+		velocity.x = 1
 	if is_on_floor() and Input.is_action_just_pressed("ui_up"):
 		velocity.y -= 200
 	move_and_slide()
