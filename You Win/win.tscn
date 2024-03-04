@@ -52,13 +52,13 @@ scale = Vector2(6, 3.375)
 texture = ExtResource("1_jcivf")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 386.0
-offset_top = 267.0
-offset_right = 806.0
-offset_bottom = 404.0
+offset_left = 312.0
+offset_top = 270.0
+offset_right = 928.0
+offset_bottom = 407.0
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0.113281, 0.753906, 0.996094, 1)
 theme_override_fonts/font = SubResource("FontFile_ihmom")
 theme_override_font_sizes/font_size = 100
-text = "You Win!!"
+text = "Você Venceu!!"
