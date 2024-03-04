@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var grav = 120
-var speed = 300
+var speed = 400
 
 
 func _process(delta):
