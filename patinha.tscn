@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scenes/patinha/patinha.gd" id="1_tuer0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2wv5"]
-size = Vector2(16, 16)
+size = Vector2(18, 18)
 
 [node name="Patinha" type="Area2D"]
 script = ExtResource("1_tuer0")
@@ -13,6 +13,7 @@ script = ExtResource("1_tuer0")
 texture = ExtResource("1_4ah7k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_g2wv5")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
