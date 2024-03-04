@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7ejn67a2rv4y"]
+
+[ext_resource type="Script" path="res://scenes/patinho/script/espinhos.gd" id="1_ijf5p"]
+[ext_resource type="Texture2D" uid="uid://bor2d141wqjrd" path="res://Art Assets/Art Assets/Hazards/Spikes.png" id="2_yq5jr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_84m61"]
+size = Vector2(98, 16)
+
+[node name="Espinhos" type="Area2D"]
+script = ExtResource("1_ijf5p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(49, 8)
+shape = SubResource("RectangleShape2D_84m61")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16.5, 0.999999)
+scale = Vector2(2.0625, 1.9375)
+texture = ExtResource("2_yq5jr")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(49, 1)
+scale = Vector2(2.0625, 1.9375)
+texture = ExtResource("2_yq5jr")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(82, 1)
+scale = Vector2(2.0625, 1.9375)
+texture = ExtResource("2_yq5jr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
